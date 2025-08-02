@@ -1,0 +1,46 @@
+{
+  "name": "livevue-sigil-highlighting---vue-",
+  "displayName": "LiveVue sigil highlighting (~VUE)",
+  "description": "Syntax highlighting support for the (~VUE) sigil",
+  "author": "Guilherme Ferreira",
+  "publisher": "guilhermepsf",
+  "version": "0.0.1",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "phoenix-heex",
+        "aliases": [
+          "HEEx",
+          "heex"
+        ],
+        "extensions": [
+          ".heex"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "source.elixir.heex",
+        "path": "./syntaxes/elixir-heex.json",
+        "injectTo": [
+          "source.elixir"
+        ],
+        "embeddedLanguages": {
+          "text.html.heex": "phoenix-heex"
+        }
+      }
+    ]
+  }
+}
