@@ -1,4 +1,4 @@
-# Phoenix package for VS Code
+# LiveVue sigil syntax highlighting extension for VS Code
 
 Syntax highlighting support for LiveVue sigil (~VUE).
 
