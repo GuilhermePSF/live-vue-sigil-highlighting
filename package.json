@@ -33,7 +33,7 @@
     ],
     "grammars": [
       {
-        "scopeName": "source.elixir.heex",
+        "scopeName": "source.elixir.vue_heex",
         "path": "./syntaxes/elixir-heex.json",
         "injectTo": [
           "source.elixir"

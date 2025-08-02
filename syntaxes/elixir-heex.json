@@ -1,19 +1,19 @@
 {
   "injectionSelector": "L:source.elixir -comment -text -string",
-  "name": "elixir-heex",
+  "name": "elixir-vue-heex",
   "patterns": [
     {
-      "comment": "HEEx sigil with heredoc (double quotes)",
+      "comment": "VUE HEEx sigil with heredoc (triple double quotes)",
       "name": "text.html.heex",
-      "begin": "\\s?(~VUE\"\"\")$",
+      "begin": "\\s*(~VUE\"\"\")",
       "beginCaptures": {
-        "0": {
+        "1": {
           "name": "string.quoted.double.heredoc.elixir"
         }
       },
-      "end": "^\\s*(\"\"\"[a-z]*)$",
+      "end": "^\\s*(\"\"\"[a-z]*)",
       "endCaptures": {
-        "0": {
+        "1": {
           "name": "string.quoted.double.heredoc.elixir"
         }
       },
@@ -24,18 +24,18 @@
       ]
     },
     {
-      "comment": "HEEx sigil with double quotes",
+      "comment": "VUE HEEx sigil with double quotes",
       "name": "text.html.heex",
       "begin": "~VUE\\\"",
       "beginCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.double.elixir"
         }
       },
       "end": "\\\"[a-z]*",
       "endCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.double.elixir"
         }
       },
       "patterns": [
@@ -45,18 +45,18 @@
       ]
     },
     {
-      "comment": "HEEx sigil with square brackets",
+      "comment": "VUE HEEx sigil with square brackets",
       "name": "text.html.heex",
       "begin": "~VUE\\[",
       "beginCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "end": "\\][a-z]*",
       "endCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "patterns": [
@@ -66,18 +66,18 @@
       ]
     },
     {
-      "comment": "HEEx sigil with parentheses",
+      "comment": "VUE HEEx sigil with parentheses",
       "name": "text.html.heex",
       "begin": "~VUE\\(",
       "beginCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "end": "\\)[a-z]*",
       "endCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "patterns": [
@@ -87,18 +87,18 @@
       ]
     },
     {
-      "comment": "HEEx sigil with curly brackets",
+      "comment": "VUE HEEx sigil with curly brackets",
       "name": "text.html.heex",
       "begin": "~VUE\\{",
       "beginCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "end": "\\}[a-z]*",
       "endCaptures": {
         "0": {
-          "name": "string.quoted.double.heredoc.elixir"
+          "name": "string.quoted.other.elixir"
         }
       },
       "patterns": [
@@ -108,5 +108,5 @@
       ]
     }
   ],
-  "scopeName": "source.elixir.heex"
+  "scopeName": "source.elixir.vue_heex"
 }
