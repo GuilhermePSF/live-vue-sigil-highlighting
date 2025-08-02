@@ -8,7 +8,7 @@
   "icon": "images/logo.png",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/GuilhermePSF/live-vue-sigil-highlighting"
   },
   "engines": {
     "vscode": "^1.102.0"
