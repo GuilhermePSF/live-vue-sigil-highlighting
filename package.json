@@ -12,7 +12,7 @@
     "url": "https://github.com/GuilhermePSF/live-vue-sigil-highlighting"
   },
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Programming Languages"
@@ -20,26 +20,26 @@
   "contributes": {
     "languages": [
       {
-        "id": "phoenix-heex",
+        "id": "vue",
         "aliases": [
-          "HEEx",
-          "heex"
+          "Vue",
+          "vue"
         ],
         "extensions": [
-          ".heex"
+          ".vue"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "scopeName": "source.elixir.vue_heex",
-        "path": "./syntaxes/elixir-heex.json",
+        "scopeName": "source.elixir.vue",
+        "path": "./syntaxes/elixir-vue.json",
         "injectTo": [
           "source.elixir"
         ],
         "embeddedLanguages": {
-          "text.html.heex": "phoenix-heex"
+          "text.html.vue": "vue"
         }
       }
     ]
