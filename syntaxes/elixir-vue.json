@@ -1,10 +1,10 @@
 {
   "injectionSelector": "L:source.elixir -comment -text -string",
-  "name": "elixir-vue-heex",
+  "name": "elixir-vue",
   "patterns": [
     {
-      "comment": "VUE HEEx sigil with heredoc (triple double quotes)",
-      "name": "text.html.heex",
+      "comment": "VUE sigil with heredoc (triple double quotes)",
+      "name": "text.html.vue",
       "begin": "\\s*(~VUE\"\"\")",
       "beginCaptures": {
         "1": {
@@ -19,13 +19,13 @@
       },
       "patterns": [
         {
-          "include": "source.heex"
+          "include": "source.vue"
         }
       ]
     },
     {
-      "comment": "VUE HEEx sigil with double quotes",
-      "name": "text.html.heex",
+      "comment": "VUE sigil with double quotes",
+      "name": "text.html.vue",
       "begin": "~VUE\\\"",
       "beginCaptures": {
         "0": {
@@ -40,13 +40,13 @@
       },
       "patterns": [
         {
-          "include": "source.heex"
+          "include": "source.vue"
         }
       ]
     },
     {
-      "comment": "VUE HEEx sigil with square brackets",
-      "name": "text.html.heex",
+      "comment": "VUE sigil with square brackets",
+      "name": "text.html.vue",
       "begin": "~VUE\\[",
       "beginCaptures": {
         "0": {
@@ -61,13 +61,13 @@
       },
       "patterns": [
         {
-          "include": "source.heex"
+          "include": "source.vue"
         }
       ]
     },
     {
-      "comment": "VUE HEEx sigil with parentheses",
-      "name": "text.html.heex",
+      "comment": "VUE sigil with parentheses",
+      "name": "text.html.vue",
       "begin": "~VUE\\(",
       "beginCaptures": {
         "0": {
@@ -82,13 +82,13 @@
       },
       "patterns": [
         {
-          "include": "source.heex"
+          "include": "source.vue"
         }
       ]
     },
     {
-      "comment": "VUE HEEx sigil with curly brackets",
-      "name": "text.html.heex",
+      "comment": "VUE sigil with curly brackets",
+      "name": "text.html.vue",
       "begin": "~VUE\\{",
       "beginCaptures": {
         "0": {
@@ -103,10 +103,10 @@
       },
       "patterns": [
         {
-          "include": "source.heex"
+          "include": "source.vue"
         }
       ]
     }
   ],
-  "scopeName": "source.elixir.vue_heex"
+  "scopeName": "source.elixir.vue"
 }
