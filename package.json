@@ -1,5 +1,5 @@
 {
-  "name": "livevue-sigil-highlighting---vue-",
+  "name": "livevue-sigil-highlighting",
   "displayName": "LiveVue sigil highlighting (~VUE)",
   "homepage": "https://hexdocs.pm/live_vue/readme.html",
   "description": "Syntax highlighting support for the (~VUE) sigil",
@@ -12,34 +12,30 @@
     "url": "https://github.com/GuilhermePSF/live-vue-sigil-highlighting"
   },
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "keywords": [
+    "elixir",
+    "vue",
+    "heex",
+    "sigil",
+    "liveview",
+    "live_vue",
+    "~VUE"
+  ],
   "contributes": {
-    "languages": [
-      {
-        "id": "phoenix-heex",
-        "aliases": [
-          "HEEx",
-          "heex"
-        ],
-        "extensions": [
-          ".heex"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
     "grammars": [
       {
-        "scopeName": "source.elixir.vue_heex",
-        "path": "./syntaxes/elixir-heex.json",
+        "scopeName": "source.elixir.vue",
+        "path": "./syntaxes/elixir-vue.json",
         "injectTo": [
           "source.elixir"
         ],
         "embeddedLanguages": {
-          "text.html.heex": "phoenix-heex"
+          "text.html.vue": "vue"
         }
       }
     ]
